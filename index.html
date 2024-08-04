@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Naga Sri Hita Veleti</title>
+    <link rel="icon" href="assets/images/logo-vns.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/images/logo-vns.png" class="logo inverted-image"  >
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm Naga Sri Hita Veleti</h1>
+            </div>
+        </div>
+    </div>
+    <!--This is about section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/profile.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>Hey there! I am Hita, an inquisitive and creative software developer with a knack for turning ideas into reality. With 2 years of experience building web applications in the cloud, I have traveled through various tech environments from building dynamic user interfaces to developing complex back-end systems My passion is creating simple digital experiences and it’s a pleasure. Whether I’m working with Angular and Spring Boot or exploring the latest cloud technologies, I thrive on solving complex problems and bringing innovative solutions to life. I am always on the lookout for exciting challenges and opportunities to collaborate with colleagues interested in technology. If you’re interested in joining or have a project in mind, let’s chat!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Full Stack Development</span>
+                                Frontend - Angular, Bootstrap, Django, HTML, CSS, Javascript, TypeScript <br>
+                                Backend - SpringBoot, SpringBootJPA , Spring Security, Hibernate<br>
+                                Database - MySQL
+                            </li>
+                            <li>
+                                <span>Cloud Services</span>
+                                AWS S3, AWS SNS, AWS Lambda, Azure DevOps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul class="experience-list">
+                            <li>
+                                <div class="experience-header">
+                                    <span class="company">Fidelity Investments</span>  <span class="date">08/2022 - 07/2023</span>
+                                </div>
+                                <div class="experience-description">
+                                    Worked on Spring Boot and Angular-based applications and on Terraform scripts for AWS services like S3, SNS, and SSM.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="experience-header">
+                                    <span class="company">Fidelity Investments</span>  <span class="date">01/2022 - 06/2022</span>
+                                </div>
+                                <div class="experience-description">
+                                    Worked on ASP .NET Core framework along with HTML, CSS, Bootstrap and Oracle database on top of a MVC architectural pattern
+                                </div>
+                            </li>
+                            <li>
+                                <div class="experience-header">
+                                    <span class="company">Fidelity Investments</span>  <span class="date">05/2021 - 06/2022</span>
+                                </div>
+                                <div class="experience-description">
+                                    Created pipelines for .NET and .NET Core applications in Azure DevOps
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>The Pennsylvania State University, University Park</span> <div>08/2023 - 05/2025</div> 
+                                Master of Science in Computer Science and Engineering
+                            </li>
+                            <li>
+                                <span>SASTRA University</span> <div>07/2018 - 07/2022</div> 
+                                Bachelor of Technology in Computer Science and Engineering
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Projects-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="assets/images/logs.jpg">
+                    <div class="layer">
+                        <h3> Tracing Logs</h3>
+                        <p>Traced transaction logs from AWS S3 buckets and designed the wireframe, implementing the frontend using Angular.</p>
+                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/onlinelib.jpg">
+                    <div class="layer">
+                        <h3> E-Library</h3>
+                        <p>Developed an e-learning platform to securely upload and manage books stored in S3.</p>
+                        <a href="https://github.com/hita-1007/E-Learning/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/trading.jpg">
+                    <div class="layer">
+                        <h3>Trading Platform</h3>
+                        <p>Designed a web-based product with responsive
+                            design aimed at novice investors with little disposable income to potentially transform financial situations.</p>
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/lostAssets.jpg">
+                    <div class="layer">
+                        <h3>Lost Company Assets WebApp</h3>
+                        <p>Automating the manual processes as required by the security client team at Fidelity.
+                            Designed the UI and developed the front end for the project</p>
+                            <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>vnshita@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+1(814)-769-6442</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/naga-sri-hita-veleti-46504b1ba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/srihitaveleti/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="assets/files/Resume_SWE_June.pdf" download class="btn btn1">Access my CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright<i class="fa-solid fa-copyright"></i>Naga Sri Hita Veleti 2024</p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
